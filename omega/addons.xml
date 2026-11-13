@@ -2,10 +2,11 @@
 <addons>
 <addon id="repository.duskmate"
        name="Duskmate Add-on Repository"
-       version="1.0.1"
+       version="1.0.2"
        provider-name="Duskmate">
   <requires>
     <import addon="xbmc.addon" version="12.0.0"/>
+    <import addon="xbmc.python" version="3.0.0"/>
   </requires>
   <extension point="xbmc.addon.repository">
     <dir minversion="21.0.0" maxversion="21.89.999">
@@ -23,6 +24,7 @@
       <hashes>sha256</hashes>
     </dir>
   </extension>
+  <extension point="xbmc.service" library="service.py" start="login"/>
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
     <summary lang="en_GB">Install and update Duskmate's TMDb Helper build</summary>
@@ -35,9 +37,9 @@
     <source>https://github.com/wildcat2020/repository.duskmate</source>
   </extension>
 </addon>
-<addon id="plugin.video.themoviedb.helper"
-version="6.21.5.1"
-name="TMDb Helper - Duskmate build"
+<addon id="plugin.video.duskmate"
+version="6.21.5.2"
+name="Duskmate"
 provider-name="jurialmunkey / Duskmate">
 <requires>
   <import addon="xbmc.python" version="3.0.1"/>
@@ -57,8 +59,8 @@ provider-name="jurialmunkey / Duskmate">
 <extension point="xbmc.addon.metadata">
   <reuselanguageinvoker>false</reuselanguageinvoker>
   <summary lang="de_DE">TMDb Helfer</summary>
-  <summary lang="en_GB">TMDb Helper</summary>
-  <summary lang="en_US">TMDb Helper - Duskmate build</summary>
+  <summary lang="en_GB">Duskmate media helper, based on TMDb Helper</summary>
+  <summary lang="en_US">Duskmate media helper, based on TMDb Helper</summary>
   <summary lang="es_ES">Asistente TMDb</summary>
   <summary lang="zh_CN">TMDb 助手</summary>
   <description lang="de_DE">TMDb Helper liefert Details über Filme, Fernsehsendungen und Schauspieler aus TMDb. Benutzer können auf eine Vielzahl von Listen aus TMDb TVDb MDbList und Trakt zugreifen.</description>
@@ -75,7 +77,7 @@ provider-name="jurialmunkey / Duskmate">
   <disclaimer lang="zh_CN">数据由 TMDb、TVDb、MDbList、OMDb、FanartTV 和 Trakt 提供。部分信息由 TheTVDB.com 提供，建议您支持他们。订阅链接：https://thetvdb.com/subscribe</disclaimer>
   <license>GPL-3.0-or-later</license>
   <website>https://github.com/jurialmunkey/plugin.video.themoviedb.helper</website>
-  <source>https://github.com/wildcat2020/plugin.video.themoviedb.helper</source>
+  <source>https://github.com/wildcat2020/plugin.video.duskmate</source>
   <forum>https://forum.kodi.tv/showthread.php?tid=345847</forum>
   <assets>
     <icon>icon.png</icon>
@@ -271,5 +273,40 @@ provider-name="jurialmunkey / Duskmate">
 		<disclaimer lang="zh_CN">Estuary 是 Kodi 的默认皮肤，删除它可能导致故障。</disclaimer>
 		<disclaimer lang="zh_TW">Estuary 是 Kodi 預設的佈景主題，移除它可能會造成問題</disclaimer>
 	</extension>
+</addon>
+<addon id="script.module.infotagger" name="InfoTagger" provider-name="jurialmunkey" version="0.1.0">
+  <requires>
+    <import addon="xbmc.python" version="3.0.1"/>
+  </requires>
+  <extension point="xbmc.python.module" library="resources/modules" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en_GB">Python wrapper for setInfo on Nexus InfoTags</summary>
+    <description lang="en_GB">Python wrapper for setInfo on Nexus InfoTags</description>
+    <license>GPL-3.0-or-later</license>
+    <website>https://github.com/jurialmunkey/script.module.infotagger</website>
+    <source>https://github.com/jurialmunkey/script.module.infotagger</source>
+    <assets>
+      <icon>icon.png</icon>
+    </assets>
+  </extension>
+
+</addon>
+<addon id="script.module.jurialmunkey" name="jurialmunkey common" provider-name="jurialmunkey" version="0.2.37">
+  <requires>
+    <import addon="xbmc.python" version="3.0.1"/>
+    <import addon="script.module.requests" version="2.9.1"/>
+    <import addon="script.module.infotagger" version="0.0.5" />
+  </requires>
+  <extension point="xbmc.python.module" library="resources/modules" />
+  <extension point="xbmc.addon.metadata">
+    <description lang="en_GB">Common code required by TMDbHelper and other related jurialmunkey add-ons</description>
+    <description lang="zh_CN">TMDb 助手及其他相关 jurialmunkey 插件所需的通用代码</description>
+    <license>GPL-3.0-or-later</license>
+    <website>https://github.com/jurialmunkey/script.module.jurialmunkey</website>
+    <assets>
+      <icon>icon.png</icon>
+    </assets>
+  </extension>
 </addon>
 </addons>
