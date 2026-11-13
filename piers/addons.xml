@@ -38,7 +38,7 @@
   </extension>
 </addon>
 <addon id="plugin.video.duskmate"
-version="6.21.5.2"
+       version="6.21.5.3"
 name="Duskmate"
 provider-name="jurialmunkey / Duskmate">
 <requires>
