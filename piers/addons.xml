@@ -2,24 +2,24 @@
 <addons>
 <addon id="repository.duskmate"
        name="Duskmate Add-on Repository"
-       version="1.0.0"
+       version="1.0.1"
        provider-name="Duskmate">
   <requires>
     <import addon="xbmc.addon" version="12.0.0"/>
   </requires>
   <extension point="xbmc.addon.repository">
     <dir minversion="21.0.0" maxversion="21.89.999">
-      <info>https://wildcat2020.github.io/repository.duskmate/omega/addons.xml.gz</info>
-      <checksum verify="sha256">https://wildcat2020.github.io/repository.duskmate/omega/addons.xml.gz.sha256</checksum>
-      <datadir>https://wildcat2020.github.io/repository.duskmate/omega/zips</datadir>
-      <artdir>https://wildcat2020.github.io/repository.duskmate/omega/zips</artdir>
+      <info>https://raw.githubusercontent.com/wildcat2020/repository.duskmate/main/omega/addons.xml.gz</info>
+      <checksum verify="sha256">https://raw.githubusercontent.com/wildcat2020/repository.duskmate/main/omega/addons.xml.gz.sha256</checksum>
+      <datadir>https://raw.githubusercontent.com/wildcat2020/repository.duskmate/main/omega/zips</datadir>
+      <artdir>https://raw.githubusercontent.com/wildcat2020/repository.duskmate/main/omega/zips</artdir>
       <hashes>sha256</hashes>
     </dir>
     <dir minversion="21.90.0">
-      <info>https://wildcat2020.github.io/repository.duskmate/piers/addons.xml.gz</info>
-      <checksum verify="sha256">https://wildcat2020.github.io/repository.duskmate/piers/addons.xml.gz.sha256</checksum>
-      <datadir>https://wildcat2020.github.io/repository.duskmate/piers/zips</datadir>
-      <artdir>https://wildcat2020.github.io/repository.duskmate/piers/zips</artdir>
+      <info>https://raw.githubusercontent.com/wildcat2020/repository.duskmate/main/piers/addons.xml.gz</info>
+      <checksum verify="sha256">https://raw.githubusercontent.com/wildcat2020/repository.duskmate/main/piers/addons.xml.gz.sha256</checksum>
+      <datadir>https://raw.githubusercontent.com/wildcat2020/repository.duskmate/main/piers/zips</datadir>
+      <artdir>https://raw.githubusercontent.com/wildcat2020/repository.duskmate/main/piers/zips</artdir>
       <hashes>sha256</hashes>
     </dir>
   </extension>
