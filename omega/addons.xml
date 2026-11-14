@@ -2,7 +2,7 @@
 <addons>
 <addon id="repository.duskmate"
        name="Duskmate Add-on Repository"
-       version="1.0.5"
+       version="1.0.6"
        provider-name="Duskmate">
   <requires>
     <import addon="xbmc.addon" version="12.0.0"/>
@@ -28,10 +28,10 @@
   <extension point="xbmc.python.script" library="service.py"/>
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
-    <summary lang="en_GB">Install and update Duskmate's TMDb Helper build</summary>
-    <summary lang="en_US">Install and update Duskmate's TMDb Helper build</summary>
-    <description lang="en_GB">A narrowly scoped repository for the upstream-tracking TMDb Helper Duskmate build and required dependencies unavailable from Kodi's official repository.</description>
-    <description lang="en_US">A narrowly scoped repository for the upstream-tracking TMDb Helper Duskmate build and required dependencies unavailable from Kodi's official repository.</description>
+    <summary lang="en_GB">Install and update Duskmate for Kodi</summary>
+    <summary lang="en_US">Install and update Duskmate for Kodi</summary>
+    <description lang="en_GB">A narrowly scoped repository for Duskmate's upstream-tracking media helper, Trakt sync module, Kodi skin and required dependencies unavailable from Kodi's official repository.</description>
+    <description lang="en_US">A narrowly scoped repository for Duskmate's upstream-tracking media helper, Trakt sync module, Kodi skin and required dependencies unavailable from Kodi's official repository.</description>
     <disclaimer lang="en_GB">This repository is maintained by Duskmate and is not endorsed by the upstream TMDb Helper author or Team Kodi.</disclaimer>
     <disclaimer lang="en_US">This repository is maintained by Duskmate and is not endorsed by the upstream TMDb Helper author or Team Kodi.</disclaimer>
     <license>Apache-2.0</license>
@@ -39,7 +39,7 @@
   </extension>
 </addon>
 <addon id="plugin.video.duskmate"
-       version="6.21.5.4"
+       version="6.21.5.5"
 name="Duskmate"
 provider-name="jurialmunkey / Duskmate">
 <requires>
@@ -88,6 +88,26 @@ provider-name="jurialmunkey / Duskmate">
     <screenshot>resources/screenshot-02.jpg</screenshot>
   </assets>
 </extension>
+</addon>
+<addon id="script.module.duskmate.sync.trakt" version="1.2.9.1" name="Duskmate Sync - Trakt" provider-name="jurialmunkey / Duskmate">
+    <requires>
+        <import addon="xbmc.python" version="3.0.1"/>
+        <import addon="script.module.jurialmunkey" version="0.2.35"/>
+        <import addon="plugin.video.duskmate" version="6.21.5.5"/>
+    </requires>
+    <extension point="xbmc.python.script" library="resources/script.py"/>
+    <extension point="xbmc.python.module" library="resources/lib"/>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">Trakt sync provider for Duskmate</summary>
+        <description lang="en_GB">Duskmate's upstream-tracking Trakt provider for directories, discovery, ratings, favourites, monitored lists, data sync and scrobbling.</description>
+        <platform>all</platform>
+        <license>GPL-3.0-or-later</license>
+        <source>https://github.com/wildcat2020/script.module.duskmate.sync.trakt</source>
+        <assets>
+            <icon>resources/icon.png</icon>
+            <fanart>resources/fanart.jpg</fanart>
+        </assets>
+    </extension>
 </addon>
 <addon id="skin.duskmate" version="0.3.1" name="Duskmate" provider-name="Duskmate (based on Estuary by phil65, Ichabod Fletchman)">
 	<requires>
