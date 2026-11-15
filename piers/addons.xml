@@ -2,7 +2,7 @@
 <addons>
 <addon id="repository.duskmate"
        name="Duskmate Add-on Repository"
-       version="1.0.32"
+       version="1.0.33"
        provider-name="Duskmate">
   <requires>
     <import addon="xbmc.addon" version="12.0.0"/>
@@ -42,7 +42,7 @@
   </extension>
 </addon>
 <addon id="plugin.video.duskmate"
-       version="6.21.5.18"
+       version="6.21.5.19"
 name="Duskmate"
 provider-name="jurialmunkey / Duskmate">
 <requires>
@@ -112,46 +112,6 @@ provider-name="jurialmunkey / Duskmate">
         </assets>
     </extension>
 </addon>
-<addon id="script.module.duskmate.sync.gemini" version="1.0.3.1" name="Duskmate Sync - Gemini" provider-name="jurialmunkey / Duskmate">
-    <requires>
-        <import addon="xbmc.python" version="3.0.1"/>
-        <import addon="script.module.jurialmunkey" version="0.2.35"/>
-        <import addon="plugin.video.duskmate" version="6.21.5.7"/>
-    </requires>
-    <extension point="xbmc.python.script" library="resources/script.py"/>
-    <extension point="xbmc.python.module" library="resources/lib"/>
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en_GB">Gemini movie and TV recommendations for Duskmate</summary>
-        <description lang="en_GB">Gemini movie and TV recommendations, API access and settings for the Duskmate helper.</description>
-        <platform>all</platform>
-        <license>GPL-3.0-or-later</license>
-        <assets>
-            <icon>resources/icon.png</icon>
-            <fanart>resources/fanart.jpg</fanart>
-        </assets>
-        <source>https://github.com/wildcat2020/script.module.duskmate.sync.gemini</source>
-    </extension>
-</addon>
-<addon id="script.module.duskmate.sync.kodi" version="1.1.7.1" name="Duskmate Sync - Kodi" provider-name="jurialmunkey / Duskmate">
-    <requires>
-        <import addon="xbmc.python" version="3.0.1"/>
-        <import addon="script.module.jurialmunkey" version="0.2.35"/>
-        <import addon="plugin.video.duskmate" version="6.21.5.7"/>
-    </requires>
-    <extension point="xbmc.python.script" library="resources/script.py"/>
-    <extension point="xbmc.python.module" library="resources/lib"/>
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en_GB">Kodi library sync provider for Duskmate</summary>
-        <description lang="en_GB">Collection, history, playback progress, watched actions and scrobbling using the local Kodi video library, with separate local history/progress for non-library items and a local watchlist.</description>
-        <platform>all</platform>
-        <license>GPL-3.0-or-later</license>
-        <assets>
-            <icon>resources/icon.png</icon>
-            <fanart>resources/fanart.jpg</fanart>
-        </assets>
-        <source>https://github.com/wildcat2020/script.module.duskmate.sync.kodi</source>
-    </extension>
-</addon>
 <addon id="script.module.duskmate.sync.mdblist" version="1.1.4.1" name="Duskmate Sync - MDbList" provider-name="jurialmunkey / Duskmate">
     <requires>
         <import addon="xbmc.python" version="3.0.1"/>
@@ -190,6 +150,46 @@ provider-name="jurialmunkey / Duskmate">
             <fanart>resources/fanart.jpg</fanart>
         </assets>
         <source>https://github.com/wildcat2020/script.module.duskmate.sync.tvdb</source>
+    </extension>
+</addon>
+<addon id="script.module.duskmate.sync.gemini" version="1.0.3.1" name="Duskmate Sync - Gemini" provider-name="jurialmunkey / Duskmate">
+    <requires>
+        <import addon="xbmc.python" version="3.0.1"/>
+        <import addon="script.module.jurialmunkey" version="0.2.35"/>
+        <import addon="plugin.video.duskmate" version="6.21.5.7"/>
+    </requires>
+    <extension point="xbmc.python.script" library="resources/script.py"/>
+    <extension point="xbmc.python.module" library="resources/lib"/>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">Gemini movie and TV recommendations for Duskmate</summary>
+        <description lang="en_GB">Gemini movie and TV recommendations, API access and settings for the Duskmate helper.</description>
+        <platform>all</platform>
+        <license>GPL-3.0-or-later</license>
+        <assets>
+            <icon>resources/icon.png</icon>
+            <fanart>resources/fanart.jpg</fanart>
+        </assets>
+        <source>https://github.com/wildcat2020/script.module.duskmate.sync.gemini</source>
+    </extension>
+</addon>
+<addon id="script.module.duskmate.sync.kodi" version="1.1.7.1" name="Duskmate Sync - Kodi" provider-name="jurialmunkey / Duskmate">
+    <requires>
+        <import addon="xbmc.python" version="3.0.1"/>
+        <import addon="script.module.jurialmunkey" version="0.2.35"/>
+        <import addon="plugin.video.duskmate" version="6.21.5.7"/>
+    </requires>
+    <extension point="xbmc.python.script" library="resources/script.py"/>
+    <extension point="xbmc.python.module" library="resources/lib"/>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">Kodi library sync provider for Duskmate</summary>
+        <description lang="en_GB">Collection, history, playback progress, watched actions and scrobbling using the local Kodi video library, with separate local history/progress for non-library items and a local watchlist.</description>
+        <platform>all</platform>
+        <license>GPL-3.0-or-later</license>
+        <assets>
+            <icon>resources/icon.png</icon>
+            <fanart>resources/fanart.jpg</fanart>
+        </assets>
+        <source>https://github.com/wildcat2020/script.module.duskmate.sync.kodi</source>
     </extension>
 </addon>
 <addon id="skin.duskmate" version="0.3.3" name="Duskmate" provider-name="Duskmate (based on Estuary by phil65, Ichabod Fletchman)">
