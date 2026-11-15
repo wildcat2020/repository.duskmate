@@ -2,7 +2,7 @@
 <addons>
 <addon id="repository.duskmate"
        name="Duskmate Add-on Repository"
-       version="1.0.34"
+       version="1.0.35"
        provider-name="Duskmate">
   <requires>
     <import addon="xbmc.addon" version="12.0.0"/>
@@ -42,7 +42,7 @@
   </extension>
 </addon>
 <addon id="plugin.video.duskmate"
-       version="6.21.5.20"
+       version="6.21.5.21"
 name="Duskmate"
 provider-name="jurialmunkey / Duskmate">
 <requires>
