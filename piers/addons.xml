@@ -2,7 +2,7 @@
 <addons>
 <addon id="repository.duskmate"
        name="Duskmate Add-on Repository"
-       version="1.0.31"
+       version="1.0.32"
        provider-name="Duskmate">
   <requires>
     <import addon="xbmc.addon" version="12.0.0"/>
@@ -42,7 +42,7 @@
   </extension>
 </addon>
 <addon id="plugin.video.duskmate"
-       version="6.21.5.17"
+       version="6.21.5.18"
 name="Duskmate"
 provider-name="jurialmunkey / Duskmate">
 <requires>
@@ -112,46 +112,6 @@ provider-name="jurialmunkey / Duskmate">
         </assets>
     </extension>
 </addon>
-<addon id="script.module.duskmate.sync.mdblist" version="1.1.4.1" name="Duskmate Sync - MDbList" provider-name="jurialmunkey / Duskmate">
-    <requires>
-        <import addon="xbmc.python" version="3.0.1"/>
-        <import addon="script.module.jurialmunkey" version="0.2.35"/>
-        <import addon="plugin.video.duskmate" version="6.21.5.7"/>
-    </requires>
-    <extension point="xbmc.python.script" library="resources/script.py"/>
-    <extension point="xbmc.python.module" library="resources/lib"/>
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en_GB">MDbList sync provider for Duskmate</summary>
-        <description lang="en_GB">MDbList API access, account settings, data sync, static-list actions, scrobbling, list directories, ratings and monitored lists for the Duskmate helper.</description>
-        <platform>all</platform>
-        <license>GPL-3.0-or-later</license>
-        <assets>
-            <icon>resources/icon.png</icon>
-            <fanart>resources/fanart.jpg</fanart>
-        </assets>
-        <source>https://github.com/wildcat2020/script.module.duskmate.sync.mdblist</source>
-    </extension>
-</addon>
-<addon id="script.module.duskmate.sync.tvdb" version="1.0.3.1" name="Duskmate Sync - TVDb" provider-name="jurialmunkey / Duskmate">
-    <requires>
-        <import addon="xbmc.python" version="3.0.1"/>
-        <import addon="script.module.jurialmunkey" version="0.2.35"/>
-        <import addon="plugin.video.duskmate" version="6.21.5.7"/>
-    </requires>
-    <extension point="xbmc.python.script" library="resources/script.py"/>
-    <extension point="xbmc.python.module" library="resources/lib"/>
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en_GB">TVDb awards and genre browsing for Duskmate</summary>
-        <description lang="en_GB">TVDb awards and genre browsing, API access and settings for the Duskmate helper.</description>
-        <platform>all</platform>
-        <license>GPL-3.0-or-later</license>
-        <assets>
-            <icon>resources/icon.png</icon>
-            <fanart>resources/fanart.jpg</fanart>
-        </assets>
-        <source>https://github.com/wildcat2020/script.module.duskmate.sync.tvdb</source>
-    </extension>
-</addon>
 <addon id="script.module.duskmate.sync.gemini" version="1.0.3.1" name="Duskmate Sync - Gemini" provider-name="jurialmunkey / Duskmate">
     <requires>
         <import addon="xbmc.python" version="3.0.1"/>
@@ -190,6 +150,46 @@ provider-name="jurialmunkey / Duskmate">
             <fanart>resources/fanart.jpg</fanart>
         </assets>
         <source>https://github.com/wildcat2020/script.module.duskmate.sync.kodi</source>
+    </extension>
+</addon>
+<addon id="script.module.duskmate.sync.mdblist" version="1.1.4.1" name="Duskmate Sync - MDbList" provider-name="jurialmunkey / Duskmate">
+    <requires>
+        <import addon="xbmc.python" version="3.0.1"/>
+        <import addon="script.module.jurialmunkey" version="0.2.35"/>
+        <import addon="plugin.video.duskmate" version="6.21.5.7"/>
+    </requires>
+    <extension point="xbmc.python.script" library="resources/script.py"/>
+    <extension point="xbmc.python.module" library="resources/lib"/>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">MDbList sync provider for Duskmate</summary>
+        <description lang="en_GB">MDbList API access, account settings, data sync, static-list actions, scrobbling, list directories, ratings and monitored lists for the Duskmate helper.</description>
+        <platform>all</platform>
+        <license>GPL-3.0-or-later</license>
+        <assets>
+            <icon>resources/icon.png</icon>
+            <fanart>resources/fanart.jpg</fanart>
+        </assets>
+        <source>https://github.com/wildcat2020/script.module.duskmate.sync.mdblist</source>
+    </extension>
+</addon>
+<addon id="script.module.duskmate.sync.tvdb" version="1.0.3.1" name="Duskmate Sync - TVDb" provider-name="jurialmunkey / Duskmate">
+    <requires>
+        <import addon="xbmc.python" version="3.0.1"/>
+        <import addon="script.module.jurialmunkey" version="0.2.35"/>
+        <import addon="plugin.video.duskmate" version="6.21.5.7"/>
+    </requires>
+    <extension point="xbmc.python.script" library="resources/script.py"/>
+    <extension point="xbmc.python.module" library="resources/lib"/>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">TVDb awards and genre browsing for Duskmate</summary>
+        <description lang="en_GB">TVDb awards and genre browsing, API access and settings for the Duskmate helper.</description>
+        <platform>all</platform>
+        <license>GPL-3.0-or-later</license>
+        <assets>
+            <icon>resources/icon.png</icon>
+            <fanart>resources/fanart.jpg</fanart>
+        </assets>
+        <source>https://github.com/wildcat2020/script.module.duskmate.sync.tvdb</source>
     </extension>
 </addon>
 <addon id="skin.duskmate" version="0.3.3" name="Duskmate" provider-name="Duskmate (based on Estuary by phil65, Ichabod Fletchman)">
@@ -377,5 +377,40 @@ provider-name="jurialmunkey / Duskmate">
 		<disclaimer lang="zh_CN">Estuary 是 Kodi 的默认皮肤，删除它可能导致故障。</disclaimer>
 		<disclaimer lang="zh_TW">Estuary 是 Kodi 預設的佈景主題，移除它可能會造成問題</disclaimer>
 	</extension>
+</addon>
+<addon id="script.module.infotagger" name="InfoTagger" provider-name="jurialmunkey" version="0.1.0">
+  <requires>
+    <import addon="xbmc.python" version="3.0.1"/>
+  </requires>
+  <extension point="xbmc.python.module" library="resources/modules" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en_GB">Python wrapper for setInfo on Nexus InfoTags</summary>
+    <description lang="en_GB">Python wrapper for setInfo on Nexus InfoTags</description>
+    <license>GPL-3.0-or-later</license>
+    <website>https://github.com/jurialmunkey/script.module.infotagger</website>
+    <source>https://github.com/jurialmunkey/script.module.infotagger</source>
+    <assets>
+      <icon>icon.png</icon>
+    </assets>
+  </extension>
+
+</addon>
+<addon id="script.module.jurialmunkey" name="jurialmunkey common" provider-name="jurialmunkey" version="0.2.37">
+  <requires>
+    <import addon="xbmc.python" version="3.0.1"/>
+    <import addon="script.module.requests" version="2.9.1"/>
+    <import addon="script.module.infotagger" version="0.0.5" />
+  </requires>
+  <extension point="xbmc.python.module" library="resources/modules" />
+  <extension point="xbmc.addon.metadata">
+    <description lang="en_GB">Common code required by TMDbHelper and other related jurialmunkey add-ons</description>
+    <description lang="zh_CN">TMDb 助手及其他相关 jurialmunkey 插件所需的通用代码</description>
+    <license>GPL-3.0-or-later</license>
+    <website>https://github.com/jurialmunkey/script.module.jurialmunkey</website>
+    <assets>
+      <icon>icon.png</icon>
+    </assets>
+  </extension>
 </addon>
 </addons>
