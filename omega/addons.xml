@@ -2,7 +2,7 @@
 <addons>
 <addon id="repository.duskmate"
        name="Duskmate Add-on Repository"
-       version="1.0.48"
+       version="1.0.49"
        provider-name="Duskmate">
   <requires>
     <import addon="xbmc.addon" version="12.0.0"/>
