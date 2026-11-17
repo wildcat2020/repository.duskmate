@@ -2,7 +2,7 @@
 <addons>
 <addon id="repository.duskmate"
        name="Duskmate Add-on Repository"
-       version="1.0.52"
+       version="1.0.53"
        provider-name="Duskmate">
   <requires>
     <import addon="xbmc.addon" version="12.0.0"/>
@@ -92,7 +92,7 @@ provider-name="jurialmunkey / Duskmate">
   </assets>
 </extension>
 </addon>
-<addon id="script.module.duskmate.sync.trakt" version="1.2.9.9" name="Duskmate Sync - Trakt" provider-name="jurialmunkey / Duskmate">
+<addon id="script.module.duskmate.sync.trakt" version="1.2.9.10" name="Duskmate Sync - Trakt" provider-name="jurialmunkey / Duskmate">
     <requires>
         <import addon="xbmc.python" version="3.0.1"/>
         <import addon="script.module.jurialmunkey" version="0.2.35"/>
