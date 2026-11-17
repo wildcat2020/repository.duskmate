@@ -2,7 +2,7 @@
 <addons>
 <addon id="repository.duskmate"
        name="Duskmate Add-on Repository"
-       version="1.0.45"
+       version="1.0.48"
        provider-name="Duskmate">
   <requires>
     <import addon="xbmc.addon" version="12.0.0"/>
@@ -42,7 +42,7 @@
   </extension>
 </addon>
 <addon id="plugin.video.duskmate"
-        version="6.21.5.23"
+        version="6.21.5.28"
 name="Duskmate"
 provider-name="jurialmunkey / Duskmate">
 <requires>
@@ -54,10 +54,10 @@ provider-name="jurialmunkey / Duskmate">
   <import addon="script.module.infotagger" version="0.1.0" />
   <import addon="script.module.qrcode" version="6.1.0" />
 </requires>
+<extension point="xbmc.python.script" library="resources/script.py" />
 <extension point="xbmc.python.pluginsource" library="resources/plugin.py">
   <provides>video</provides>
 </extension>
-<extension point="xbmc.python.script" library="resources/script.py" />
 <extension point="xbmc.service" library="resources/service.py" />
 <extension point="xbmc.python.module" library="resources/modules"/>
 <extension point="xbmc.addon.metadata">
@@ -84,7 +84,7 @@ provider-name="jurialmunkey / Duskmate">
   <source>https://github.com/wildcat2020/plugin.video.duskmate</source>
   <forum>https://forum.kodi.tv/showthread.php?tid=345847</forum>
   <assets>
-    <icon>icon.png</icon>
+    <icon>icon-v28.png</icon>
     <fanart>fanart.jpg</fanart>
     <clearlogo>clearlogo.png</clearlogo>
     <screenshot>resources/screenshot-01.jpg</screenshot>
@@ -92,7 +92,7 @@ provider-name="jurialmunkey / Duskmate">
   </assets>
 </extension>
 </addon>
-<addon id="script.module.duskmate.sync.trakt" version="1.2.9.8" name="Duskmate Sync - Trakt" provider-name="jurialmunkey / Duskmate">
+<addon id="script.module.duskmate.sync.trakt" version="1.2.9.9" name="Duskmate Sync - Trakt" provider-name="jurialmunkey / Duskmate">
     <requires>
         <import addon="xbmc.python" version="3.0.1"/>
         <import addon="script.module.jurialmunkey" version="0.2.35"/>
@@ -107,7 +107,7 @@ provider-name="jurialmunkey / Duskmate">
         <license>GPL-3.0-or-later</license>
         <source>https://github.com/wildcat2020/script.module.duskmate.sync.trakt</source>
         <assets>
-            <icon>resources/icon.png</icon>
+            <icon>resources/icon-v9.png</icon>
             <fanart>resources/fanart.jpg</fanart>
         </assets>
     </extension>
