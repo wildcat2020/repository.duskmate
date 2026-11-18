@@ -2,11 +2,10 @@
 <addons>
 <addon id="repository.duskmate"
        name="Duskmate Add-on Repository"
-       version="1.0.70"
+       version="1.0.71"
        provider-name="Duskmate">
   <requires>
     <import addon="xbmc.addon" version="12.0.0"/>
-    <import addon="xbmc.python" version="3.0.0"/>
   </requires>
   <extension point="xbmc.addon.repository">
     <dir minversion="21.0.0" maxversion="21.89.999">
@@ -24,11 +23,6 @@
       <hashes>sha256</hashes>
     </dir>
   </extension>
-  <extension point="xbmc.service" library="service.py" start="login"/>
-  <extension point="xbmc.python.script" library="service.py"/>
-  <extension point="xbmc.python.pluginsource" library="service.py">
-    <provides>executable</provides>
-  </extension>
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
     <summary lang="en_GB">Install and update Duskmate for Kodi</summary>
@@ -39,6 +33,30 @@
     <disclaimer lang="en_US">This repository is maintained by Duskmate and is not endorsed by the upstream TMDb Helper author or Team Kodi.</disclaimer>
     <license>Apache-2.0</license>
     <source>https://github.com/wildcat2020/repository.duskmate</source>
+  </extension>
+</addon>
+<addon id="script.duskmate.installer"
+       name="Duskmate Installer"
+       version="1.0.0"
+       provider-name="Duskmate">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="default.py"/>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en_GB">Install and configure approved Duskmate Kodi components</summary>
+    <summary lang="en_US">Install and configure approved Duskmate Kodi components</summary>
+    <description lang="en_GB">A small executable bridge used by the Duskmate setup wizard to install explicitly approved packages from the Duskmate repository.</description>
+    <description lang="en_US">A small executable bridge used by the Duskmate setup wizard to install explicitly approved packages from the Duskmate repository.</description>
+    <disclaimer lang="en_GB">This installer runs only after an explicit setup action. It does not include player packs or provider add-ons.</disclaimer>
+    <disclaimer lang="en_US">This installer runs only after an explicit setup action. It does not include player packs or provider add-ons.</disclaimer>
+    <license>Apache-2.0</license>
+    <source>https://github.com/wildcat2020/script.duskmate.installer</source>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+    </assets>
   </extension>
 </addon>
 <addon id="plugin.video.duskmate"
