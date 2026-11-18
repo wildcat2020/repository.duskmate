@@ -2,7 +2,7 @@
 <addons>
 <addon id="repository.duskmate"
        name="Duskmate Add-on Repository"
-       version="1.0.58"
+       version="1.0.59"
        provider-name="Duskmate">
   <requires>
     <import addon="xbmc.addon" version="12.0.0"/>
@@ -42,7 +42,7 @@
   </extension>
 </addon>
 <addon id="plugin.video.duskmate"
-        version="6.21.5.30"
+        version="6.21.5.31"
 name="Duskmate"
 provider-name="jurialmunkey / Duskmate">
 <requires>
@@ -50,8 +50,8 @@ provider-name="jurialmunkey / Duskmate">
   <import addon="script.module.requests" version="2.9.1"/>
   <import addon="script.module.pil" version="1.1.7"/>
   <import addon="script.module.addon.signals" version="0.0.6" />
-  <import addon="script.module.duskmate.common" version="0.2.39.1" />
-  <import addon="script.module.duskmate.infotagger" version="0.1.0.1" />
+  <import addon="script.module.duskmate.common" version="0.2.39.2" />
+  <import addon="script.module.duskmate.infotagger" version="0.1.0.2" />
   <import addon="script.module.qrcode" version="6.1.0" />
 </requires>
 <extension point="xbmc.python.script" library="resources/script.py" />
@@ -468,7 +468,7 @@ v1.3.2 (2026-11-01)
 		<disclaimer lang="zh_TW">Estuary 是 Kodi 預設的佈景主題，移除它可能會造成問題</disclaimer>
 	</extension>
 </addon>
-<addon id="script.module.duskmate.infotagger" name="Duskmate InfoTagger" provider-name="Duskmate / jurialmunkey" version="0.1.0.1">
+<addon id="script.module.duskmate.infotagger" name="Duskmate InfoTagger" provider-name="Duskmate / jurialmunkey" version="0.1.0.2">
   <requires>
     <import addon="xbmc.python" version="3.0.1"/>
   </requires>
@@ -487,11 +487,11 @@ v1.3.2 (2026-11-01)
   </extension>
 
 </addon>
-<addon id="script.module.duskmate.common" name="Duskmate Common" provider-name="Duskmate / jurialmunkey" version="0.2.39.1">
+<addon id="script.module.duskmate.common" name="Duskmate Common" provider-name="Duskmate / jurialmunkey" version="0.2.39.2">
   <requires>
     <import addon="xbmc.python" version="3.0.1"/>
     <import addon="script.module.requests" version="2.9.1"/>
-    <import addon="script.module.duskmate.infotagger" version="0.1.0.1" />
+    <import addon="script.module.duskmate.infotagger" version="0.1.0.2" />
   </requires>
   <extension point="xbmc.python.module" library="resources/modules" />
   <extension point="xbmc.addon.metadata">
