@@ -282,7 +282,7 @@ v1.3.2 (2026-11-01)
         <source>https://github.com/wildcat2020/script.module.duskmate.sync.kodi</source>
     </extension>
 </addon>
-<addon id="skin.duskmate" version="0.3.4" name="Duskmate" provider-name="Duskmate (based on Estuary by phil65, Ichabod Fletchman)">
+<addon id="skin.duskmate" version="0.3.5" name="Duskmate" provider-name="Duskmate (based on Estuary by phil65, Ichabod Fletchman)">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0"/>
 	</requires>
