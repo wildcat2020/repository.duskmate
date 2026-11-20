@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.duskmate"
+       name="Duskmate Add-on Repository"
+       version="1.0.73"
+       provider-name="Duskmate">
+  <requires>
+    <import addon="xbmc.addon" version="12.0.0"/>
+  </requires>
+  <extension point="xbmc.addon.repository">
+    <dir minversion="21.0.0" maxversion="21.89.999">
+      <info>https://wildcat2020.github.io/repository.duskmate/omega/addons.xml.gz</info>
+      <checksum verify="sha256">https://wildcat2020.github.io/repository.duskmate/omega/addons.xml.gz.sha256</checksum>
+      <datadir>https://wildcat2020.github.io/repository.duskmate/omega/zips</datadir>
+      <artdir>https://wildcat2020.github.io/repository.duskmate/omega/zips</artdir>
+      <hashes>sha256</hashes>
+    </dir>
+    <dir minversion="21.90.0">
+      <info>https://wildcat2020.github.io/repository.duskmate/piers/addons.xml.gz</info>
+      <checksum verify="sha256">https://wildcat2020.github.io/repository.duskmate/piers/addons.xml.gz.sha256</checksum>
+      <datadir>https://wildcat2020.github.io/repository.duskmate/piers/zips</datadir>
+      <artdir>https://wildcat2020.github.io/repository.duskmate/piers/zips</artdir>
+      <hashes>sha256</hashes>
+    </dir>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en_GB">Install and update Duskmate for Kodi</summary>
+    <summary lang="en_US">Install and update Duskmate for Kodi</summary>
+    <description lang="en_GB">A narrowly scoped repository for Duskmate's upstream-tracking media helper, optional sync providers, Kodi skin and required dependencies unavailable from Kodi's official repository.</description>
+    <description lang="en_US">A narrowly scoped repository for Duskmate's upstream-tracking media helper, optional sync providers, Kodi skin and required dependencies unavailable from Kodi's official repository.</description>
+    <disclaimer lang="en_GB">This repository is maintained by Duskmate and is not endorsed by the upstream TMDb Helper author or Team Kodi.</disclaimer>
+    <disclaimer lang="en_US">This repository is maintained by Duskmate and is not endorsed by the upstream TMDb Helper author or Team Kodi.</disclaimer>
+    <license>Apache-2.0</license>
+    <source>https://github.com/wildcat2020/repository.duskmate</source>
+  </extension>
+</addon>
