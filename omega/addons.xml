@@ -60,7 +60,7 @@
   </extension>
 </addon>
 <addon id="plugin.video.duskmate"
-        version="6.21.5.32"
+        version="6.21.5.44"
 name="Duskmate"
 provider-name="jurialmunkey / Duskmate">
 <requires>
@@ -242,66 +242,6 @@ v1.3.2 (2026-11-01)
             <screenshot>resources/media/upnext-settings.jpg</screenshot>
             <screenshot>resources/media/upnext-developer.jpg</screenshot>
         </assets>
-    </extension>
-</addon>
-<addon id="script.module.duskmate.sync.kodi" version="1.1.7.2" name="Duskmate Sync - Kodi" provider-name="jurialmunkey / Duskmate">
-    <requires>
-        <import addon="xbmc.python" version="3.0.1"/>
-        <import addon="script.module.duskmate.common" version="0.2.39.1"/>
-        <import addon="plugin.video.duskmate" version="6.21.5.7"/>
-    </requires>
-    <extension point="xbmc.python.script" library="resources/script.py"/>
-    <extension point="xbmc.python.module" library="resources/lib"/>
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en_GB">Kodi library sync provider for Duskmate</summary>
-        <description lang="en_GB">Collection, history, playback progress, watched actions and scrobbling using the local Kodi video library, with separate local history/progress for non-library items and a local watchlist.</description>
-        <platform>all</platform>
-        <license>GPL-3.0-or-later</license>
-        <assets>
-            <icon>resources/icon.png</icon>
-            <fanart>resources/fanart.jpg</fanart>
-        </assets>
-        <source>https://github.com/wildcat2020/script.module.duskmate.sync.kodi</source>
-    </extension>
-</addon>
-<addon id="script.module.duskmate.sync.mdblist" version="1.1.4.2" name="Duskmate Sync - MDbList" provider-name="jurialmunkey / Duskmate">
-    <requires>
-        <import addon="xbmc.python" version="3.0.1"/>
-        <import addon="script.module.duskmate.common" version="0.2.39.1"/>
-        <import addon="plugin.video.duskmate" version="6.21.5.7"/>
-    </requires>
-    <extension point="xbmc.python.script" library="resources/script.py"/>
-    <extension point="xbmc.python.module" library="resources/lib"/>
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en_GB">MDbList sync provider for Duskmate</summary>
-        <description lang="en_GB">MDbList API access, account settings, data sync, static-list actions, scrobbling, list directories, ratings and monitored lists for the Duskmate helper.</description>
-        <platform>all</platform>
-        <license>GPL-3.0-or-later</license>
-        <assets>
-            <icon>resources/icon.png</icon>
-            <fanart>resources/fanart.jpg</fanart>
-        </assets>
-        <source>https://github.com/wildcat2020/script.module.duskmate.sync.mdblist</source>
-    </extension>
-</addon>
-<addon id="script.module.duskmate.sync.tvdb" version="1.0.3.2" name="Duskmate Sync - TVDb" provider-name="jurialmunkey / Duskmate">
-    <requires>
-        <import addon="xbmc.python" version="3.0.1"/>
-        <import addon="script.module.duskmate.common" version="0.2.39.1"/>
-        <import addon="plugin.video.duskmate" version="6.21.5.7"/>
-    </requires>
-    <extension point="xbmc.python.script" library="resources/script.py"/>
-    <extension point="xbmc.python.module" library="resources/lib"/>
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en_GB">TVDb awards and genre browsing for Duskmate</summary>
-        <description lang="en_GB">TVDb awards and genre browsing, API access and settings for the Duskmate helper.</description>
-        <platform>all</platform>
-        <license>GPL-3.0-or-later</license>
-        <assets>
-            <icon>resources/icon.png</icon>
-            <fanart>resources/fanart.jpg</fanart>
-        </assets>
-        <source>https://github.com/wildcat2020/script.module.duskmate.sync.tvdb</source>
     </extension>
 </addon>
 <addon id="skin.duskmate" version="0.3.5" name="Duskmate" provider-name="Duskmate (based on Estuary by phil65, Ichabod Fletchman)">
@@ -527,5 +467,65 @@ v1.3.2 (2026-11-01)
         </assets>
   </extension>
 
+</addon>
+<addon id="script.module.duskmate.sync.kodi" version="1.1.7.2" name="Duskmate Sync - Kodi" provider-name="jurialmunkey / Duskmate">
+    <requires>
+        <import addon="xbmc.python" version="3.0.1"/>
+        <import addon="script.module.duskmate.common" version="0.2.39.1"/>
+        <import addon="plugin.video.duskmate" version="6.21.5.7"/>
+    </requires>
+    <extension point="xbmc.python.script" library="resources/script.py"/>
+    <extension point="xbmc.python.module" library="resources/lib"/>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">Kodi library sync provider for Duskmate</summary>
+        <description lang="en_GB">Collection, history, playback progress, watched actions and scrobbling using the local Kodi video library, with separate local history/progress for non-library items and a local watchlist.</description>
+        <platform>all</platform>
+        <license>GPL-3.0-or-later</license>
+        <assets>
+            <icon>resources/icon.png</icon>
+            <fanart>resources/fanart.jpg</fanart>
+        </assets>
+        <source>https://github.com/wildcat2020/script.module.duskmate.sync.kodi</source>
+    </extension>
+</addon>
+<addon id="script.module.duskmate.sync.mdblist" version="1.1.4.2" name="Duskmate Sync - MDbList" provider-name="jurialmunkey / Duskmate">
+    <requires>
+        <import addon="xbmc.python" version="3.0.1"/>
+        <import addon="script.module.duskmate.common" version="0.2.39.1"/>
+        <import addon="plugin.video.duskmate" version="6.21.5.7"/>
+    </requires>
+    <extension point="xbmc.python.script" library="resources/script.py"/>
+    <extension point="xbmc.python.module" library="resources/lib"/>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">MDbList sync provider for Duskmate</summary>
+        <description lang="en_GB">MDbList API access, account settings, data sync, static-list actions, scrobbling, list directories, ratings and monitored lists for the Duskmate helper.</description>
+        <platform>all</platform>
+        <license>GPL-3.0-or-later</license>
+        <assets>
+            <icon>resources/icon.png</icon>
+            <fanart>resources/fanart.jpg</fanart>
+        </assets>
+        <source>https://github.com/wildcat2020/script.module.duskmate.sync.mdblist</source>
+    </extension>
+</addon>
+<addon id="script.module.duskmate.sync.tvdb" version="1.0.3.2" name="Duskmate Sync - TVDb" provider-name="jurialmunkey / Duskmate">
+    <requires>
+        <import addon="xbmc.python" version="3.0.1"/>
+        <import addon="script.module.duskmate.common" version="0.2.39.1"/>
+        <import addon="plugin.video.duskmate" version="6.21.5.7"/>
+    </requires>
+    <extension point="xbmc.python.script" library="resources/script.py"/>
+    <extension point="xbmc.python.module" library="resources/lib"/>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">TVDb awards and genre browsing for Duskmate</summary>
+        <description lang="en_GB">TVDb awards and genre browsing, API access and settings for the Duskmate helper.</description>
+        <platform>all</platform>
+        <license>GPL-3.0-or-later</license>
+        <assets>
+            <icon>resources/icon.png</icon>
+            <fanart>resources/fanart.jpg</fanart>
+        </assets>
+        <source>https://github.com/wildcat2020/script.module.duskmate.sync.tvdb</source>
+    </extension>
 </addon>
 </addons>
